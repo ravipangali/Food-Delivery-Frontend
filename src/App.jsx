@@ -7,6 +7,7 @@ import Order from './pages/order'
 import Profile from './pages/profile'
 import Header from './components/header'
 import Footer from './components/footer'
+import SingleCategory from './pages/singleCategory'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/restaurants" element={ <Restaurant /> } />
         <Route path="/order" element={ <Order /> } />
         <Route path="/profile" element={ <Profile /> } />
+
+        <Route path='/category/:id' element={ <SingleCategory /> } />
       
       </Routes>
       <Footer />

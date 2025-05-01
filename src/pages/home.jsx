@@ -5,6 +5,7 @@ import HomeRestaurantList from '../components/home/homeRestaurantList'
 import MostPopular from '../components/home/mostPopular'
 import Loading from '../components/loading'
 import { getRequest } from '../services/apiService'
+import HomeFoodList from '../components/home/homeFoodList'
 
 function Home() {
 
@@ -43,6 +44,8 @@ function Home() {
       <HomeRestaurantList datas={restaurants} />
 
       <MostPopular datas={mostPopular} />
+
+      <HomeFoodList datas={categories} />
 
     </div>
   )
