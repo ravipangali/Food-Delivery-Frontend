@@ -8,6 +8,7 @@ import Profile from './pages/profile'
 import Header from './components/header'
 import Footer from './components/footer'
 import SingleCategory from './pages/singleCategory'
+import SingleRestaurant from './pages/singleRestaurant'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profile" element={ <Profile /> } />
 
         <Route path='/category/:id' element={ <SingleCategory /> } />
+        <Route path='/restaurant/:id' element={ <SingleRestaurant /> } />
       
       </Routes>
       <Footer />

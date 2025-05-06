@@ -1,8 +1,8 @@
 import React from 'react'
-import SectionTitle from './sectionTitle'
-import FoodCard from '../foodCard'
+import SectionTitle from './home/sectionTitle'
+import FoodCard from './foodCard'
 
-function HomeFoodList({ datas }) {
+function CategoriesFoodList({ datas }) {
     return (
         <div>
             {
@@ -26,6 +26,7 @@ function HomeFoodList({ datas }) {
                                         category={item.category.name}
                                         image={item.image}
                                         price={item.price}
+                                        restaurant={item.restaurant.name}
                                     />
                                     )
                                 }
@@ -40,4 +41,4 @@ function HomeFoodList({ datas }) {
     )
 }
 
-export default HomeFoodList
+export default CategoriesFoodList

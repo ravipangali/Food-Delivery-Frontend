@@ -5,7 +5,8 @@ function FoodCard({
     name,
     image,
     category,
-    price
+    price,
+    restaurant
 }) {
     return (
         <div className='flex-shrink-0 shadow-lg w-[15rem] bg-white rounded-lg overflow-hidden relative'>
@@ -15,6 +16,7 @@ function FoodCard({
                 <p className='text-sm'>{category}</p>
                 <p className='text-sm text-red-600'>Rs {price}/-</p>
             </div>
+            <p className='px-2 pb-2 text-sm text-green-600'>Restaurant: {restaurant}</p>
         </div>
     )
 }
